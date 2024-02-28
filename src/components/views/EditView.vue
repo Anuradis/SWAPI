@@ -15,7 +15,7 @@ onMounted(async () => {
   if (!fillPersonInformation.value) {
     personDetails.value = structuredClone(INITIAL_PERSON_DETAILS)
   } else {
-    // Performance wise it could be improved not to perform fetch but rather use people data passed here i.e. by creating composable and state
+    // NOTE - Performance wise it could be improved not to perform fetch but rather use people data passed here i.e. by creating composable and state
     // but just for purpose of exercise and usage of SWAPI API fetch call performed, another thing would be a memo function to cache already used params
     personDetails.value = await SwapiService.fetchPersonDetailsById(personId)
   }
@@ -83,7 +83,6 @@ const logInputedData = () => {
   display: flex;
   flex-direction: column;
 }
-
 .field {
   color: $gray;
   display: flex;
