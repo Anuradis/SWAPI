@@ -1,0 +1,31 @@
+.container {
+  background-color: $light-gray;
+  border: 1px solid $border-gray;
+  min-width: 600px;
+  min-height: 550px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: $blue;
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: $gray;
+  }
+}
+
+.rounded {
+  border-radius: 3px;
+}
+
+.shadow {
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+}
